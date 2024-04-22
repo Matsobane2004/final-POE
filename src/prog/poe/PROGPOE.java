@@ -8,7 +8,9 @@ public class PROGPOE
     {
        Scanner sn = new Scanner(System.in);
        Validations vld = new Validations();
-       
+
+       String FirstName;
+       String LastName;
        String username;
        String password;
        boolean usrn;
@@ -20,7 +22,13 @@ public class PROGPOE
        spChar = false;
        passlng = false;
        capLr = false;
+
+      System.out.print("Enter your first name : ");
+       FirstName = sn.next();
        
+       System.out.print("Enter your last name : ");
+       LastName = sn.next();
+        
        while(usrn == false )
        {
         System.out.print("Enter Username : ");
@@ -64,12 +72,10 @@ public class PROGPOE
             logusr = sn.next();
             System.out.print("Enter your login Password : ");
             logpass = sn.next();
-                
+
+            System.out.println("\nWelcome back "+ FirstName + " " + LastName + ","+ "it is great to see you again!");
         }
-        if(logusr.compareTo(username) == 0)
-            {
-                
-            }
+
     }
     
 }
